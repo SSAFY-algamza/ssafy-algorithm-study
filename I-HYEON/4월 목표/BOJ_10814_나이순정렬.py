@@ -4,7 +4,7 @@ def quicksort(arr,s,e):
         quicksort(arr,s,pivot-1)
         quicksort(arr,pivot+1,e)
 
-def partition(arr,s,e):
+def partition(arr, s, e):
 
     pivot = arr[s][0]
     i = s
