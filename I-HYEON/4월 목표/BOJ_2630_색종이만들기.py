@@ -3,7 +3,7 @@ paper = [list(map(int,input().split())) for _ in range(N)]
 white = 0
 blue = 0
 
-def check(r,c,n):  # r은 가장 첫번째 행 번호, c는 가장 첫번째 열 번호, n은 총 길이
+def check(r, c, n):  # r은 가장 첫번째 행 번호, c는 가장 첫번째 열 번호, n은 총 길이
     global white
     global blue
 
