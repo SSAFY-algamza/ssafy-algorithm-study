@@ -2,35 +2,38 @@ import sys
 import heapq
 input = sys.stdin.readline
 
-V,E = map(int,input().split())
-INF = int(1e9)
-K = int(input())
-adj = [[] for _ in range(V+1)]
-for _ in range(V):
-    s,e,w = map(int,input().split())
-    adj[s].append((e,w))
-v = [INF for _ in range(V+1)]
-v[K] = 0
-def dik(s):
+def dijkstra(s):
     Q =[]
-    heapq.heappush(Q,(0,s))
+    heapq.heappush(Q, (0, s))
 
     while Q:
-        cost, current = heapq.heappop(Q)
+        dist, node = heapq.heappop(Q)
 
-        if v[current] < cost:
+        if v[node] < dist:  # 지금까지 더해온 거리보다 노드에 적힌 최단경로가 더 작다면
             continue
-        for i in adj[current]:
-            temp = cost + i[1]
-            if v[i[0]] > temp:
-                v[i[0]] = temp
-                heapq.heappush(Q, (temp, i[0]))
+
+        for next_node, weight in adj[node]:
+            next_dist = dist + weight
+            if v[next_node] > next_dist:
+                v[next_node] = next_dist
+                heapq.heappush(Q, (next_dist, next_node))
     return
 
-dik(K)
+V, E = map(int, input().split())
+K = int(input())
+adj = [[] for _ in range(V+1)]
 
-for i in range(1,V+1):
-    if v[i] == INF:
-        print("INF")
+for _ in range(E):
+    s, e, w = map(int, input().split())
+    adj[s].append((e, w))
+
+v = [float('inf') for _ in range(V+1)]
+v[K] = 0
+
+dijkstra(K)
+
+for i in v[1:]:
+    if i == float('inf'):
+        print('INF')
     else:
-        print(v[i])
+        print(i)
