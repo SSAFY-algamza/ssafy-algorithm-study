@@ -1,12 +1,20 @@
 import sys
-N = int(sys.stdin.readline())
-seq = sorted([int(i) for i in sys.stdin.readline().split()])  # 오름차순 수열
-idxs = {}  # 평가대상  # {숫자값: idx_list}
+from collections import defaultdict  # 딕셔너리의 기본값을 지정해줄 수 있다.
+readline = sys.stdin.readline
+N = int(readline())
+seq = sorted([int(i) for i in readline().split()])  # 오름차순 수열
+
+idxs = defaultdict(list)  # 평가대상  # {숫자값: idx_list}
 for idx, num in enumerate(seq):
-    if num in idxs:
-        idxs[num].append(idx)
-        continue
-    idxs[num] = [idx]
+    idxs[num].append(idx)  # 키 생성과 함꼐 기본 값으로 빈배열이 들어옴
+# 아래 코드와 동일한 기능, 성능차는 몰겠음
+
+# idxs = {}  # 평가대상  # {숫자값: idx_list}
+# for idx, num in enumerate(seq):
+#     if num in idxs:
+#         idxs[num].append(idx)
+#         continue
+#     idxs[num] = [idx]
 
 ans = 0
 for i in range(N):
