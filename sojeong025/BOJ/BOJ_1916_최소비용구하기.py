@@ -1,6 +1,6 @@
 import sys
-sys.stdin = open('input.txt')
-# input = sys.stdin.readline()
+# sys.stdin = open('input.txt')
+input = sys.stdin.readline()
 import heapq
 
 def dijkstra(start):
@@ -17,6 +17,8 @@ def dijkstra(start):
         # 현재 노드와 연결된 다른 인접한 노드들을 확인
         for i in graph[now]:
             ans = co + i[1]
+            print(ans)
+            print(graph[start])
             # 현재 노드를 거쳐, 다른 노드로 이동하는 거리가 더 짧은 경우
             if ans < cost[i[0]]:
                 cost[i[0]] = ans
