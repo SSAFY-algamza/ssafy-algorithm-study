@@ -5,26 +5,23 @@ lst.sort()  # 크기 순으로 정렬한다
 
 Good = 0
 
-for i in range(N):
-    left = 0
-    right = N-1
+def is_Good(arr, key):
+    global Good
+    s, e = 0, len(arr)-1
 
-    while left < right:
-        if left == i:
-            left += 1
-            continue
-        if right == i:
-            right -= 1
-            continue
+    while s < e:
+        summ = arr[s] + arr[e]
 
-        summ = lst[left] + lst[right]
-
-        if summ == lst[i]:
+        if summ == key:
             Good += 1
-            break
-        elif summ < lst[i]:
-            left += 1
+            return
+        elif summ < key:
+            s += 1
         else:
-            right -= 1
+            e -= 1
+
+for i in range(N):
+    new_lst = lst[:i] + lst[i+1:]
+    is_Good(new_lst, lst[i])
 
 print(Good)
