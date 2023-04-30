@@ -31,20 +31,23 @@ const inputChars = String(readFileSync('/dev/stdin')).trim().split('');
 
 
 /** @type {Boolean[][]} [end][start]*/
-const isPalindrome = [];
-inputChars.forEach((_, end, chars) => isPalindrome.push(
-  chars
-    .slice(0, end + 1)
-    .map((_, start) => checkPalindrome(chars, start, end, isPalindrome))
-));
+const isPalindrome = inputChars.reduce((dp, _, end, chars) => {
+  dp.push(
+    chars
+      .slice(0, end + 1)
+      .map((_, start) => checkPalindrome(chars, start, end, dp))
+  );
+  return dp;
+}, []);
 
 /** @type {Number[]} */
-const min_split = [];
-isPalindrome.forEach((bools, end) => min_split.push(
-  bools[0] ? 1 : bools.reduce(
-    (acc, bool, start) => bool ? min(acc, min_split[start - 1] + 1) : acc,
-    end + 1
-  )
-));
+const min_split = isPalindrome.reduce((dp, bools, end) => {
+  dp.push(
+    bools[0] ? 1 : bools.reduce(
+      (prev, bool, start) => bool ? min(prev, dp[start - 1] + 1) : prev, end + 1
+    )
+  );
+  return dp;
+}, []);
 
 console.log(min_split.pop());
