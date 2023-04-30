@@ -40,7 +40,6 @@ inputChars.forEach((_, end, chars) => isPalindrome.push(
 
 /** @type {Number[]} */
 const min_split = [];
-
 isPalindrome.forEach((bools, end) => min_split.push(
   bools[0] ? 1 : bools.reduce(
     (acc, bool, start) => bool ? min(acc, min_split[start - 1] + 1) : acc,
