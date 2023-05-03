@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb396da6-6686-4c62-a898-4e9dd9307d10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BOJ/BOJ_1005_ACMCraft.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ_6497_전력난.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BOJ/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/input.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BOJ/output.out" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/output.out" afterDir="false" />
