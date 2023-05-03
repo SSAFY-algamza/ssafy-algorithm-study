@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb396da6-6686-4c62-a898-4e9dd9307d10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BOJ/BOJ_15721_번데기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/BOJ_1005_ACMCraft.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BOJ/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/input.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BOJ/output.out" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/output.out" afterDir="false" />
@@ -33,15 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/tjwn1/Desktop/ssafy-algorithm-study/I-HYEON/BOJ/BOJ_15721_번데기.py"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tjwn1/Desktop/ssafy-algorithm-study/I-HYEON/BOJ/prac.py&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="BOJ_15721_번데기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="prac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <output_file path="$PROJECT_DIR$/BOJ/output.out" is_save="true" />
       <module name="I-HYEON" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -54,7 +54,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BOJ/BOJ_15721_번데기.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BOJ/prac.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -65,7 +65,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.BOJ_15721_번데기" />
+        <item itemvalue="Python.prac" />
       </list>
     </recent_temporary>
   </component>
