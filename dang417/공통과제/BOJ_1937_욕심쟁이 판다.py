@@ -8,16 +8,15 @@ input = sys.stdin.readline
 di = [-1, 1, 0, 0]
 dj = [0, 0, -1, 1]
 
-def move(i, j):
+def DFS(i, j):
     if not DP[i][j]:
         DP[i][j] = 1
-
         for k in range(4):
             ni = i + di[k]
             nj = j + dj[k]
             if 0 <= ni < N and 0 <= nj < N:
                 if forest[ni][nj] > forest[i][j]:
-                    DP[i][j] = max(DP[i][j], move(ni, nj))
+                    DP[i][j] = max(DP[i][j], DFS(ni, nj))
 
     return DP[i][j] + 1
 
@@ -28,6 +27,6 @@ rlt = 0
 
 for i in range(N):
     for j in range(N):
-        rlt = max(rlt, move(i, j))
+        rlt = max(rlt, DFS(i, j))
 
 print(rlt-1)
