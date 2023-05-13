@@ -7,10 +7,13 @@ dict_lst = ['',]
 for _ in range(N):
     dict_lst.append(input().rstrip())
 
+ans_lst = []
 for _ in range(M):
     quest = input().rstrip()
 
     if quest.isdigit():
-        print(dict_lst[int(quest)])
+        ans_lst.append(dict_lst[int(quest)])
     else:
-        print(dict_lst.index(quest))
+        ans_lst.append(dict_lst.index(quest))
+
+print("/n".join(ans_lst))

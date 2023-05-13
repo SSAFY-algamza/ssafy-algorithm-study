@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb396da6-6686-4c62-a898-4e9dd9307d10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BOJ/BOJ_16434_드래곤앤던전.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BOJ/BOJ_1620_나는야포켓몬마스터이다솜.py" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/BOJ_1620_나는야포켓몬마스터이다솜.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BOJ/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/input.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BOJ/output.out" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/output.out" afterDir="false" />
     </list>
