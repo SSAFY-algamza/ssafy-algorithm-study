@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb396da6-6686-4c62-a898-4e9dd9307d10" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/I-HYEON.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/I-HYEON.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BOJ/BOJ_1620_나는야포켓몬마스터이다솜.py" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/BOJ_1620_나는야포켓몬마스터이다솜.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BOJ/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/input.in" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/BOJ/BOJ_1654_랜선자르기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 5d435aff0822ff08a3398453fd08b4b8f78f6a94
       <change beforePath="$PROJECT_DIR$/BOJ/output.out" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/output.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BOJ_10816_숫자카드2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BOJ_6497_전력난.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
